@@ -11,6 +11,7 @@ import Actions from './components/actions/actions'
 import Confirmation from './components/confirmation/confirmation'
 import Gift from './components/gift/gift'
 import Footer from './components/footer/footer'
+import MusicButton from './components/musicButton/musicButton'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <Divider />
       <Gift />
       <Footer />
+      <MusicButton />
     </>
   )
 }
