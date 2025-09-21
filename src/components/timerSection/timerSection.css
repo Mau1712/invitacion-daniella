@@ -1,0 +1,52 @@
+.timerSectionContainer {
+    position: relative;
+}
+
+.timerSectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-inline: 16px;
+    padding-block: 50px 0px;
+}
+
+.timerSectionContainer .titleTimer {
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Gistesy';
+    margin: 0%;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+    margin-top: 25px;
+}
+
+.timerSectionContent .textTimer {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Gistesy';
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 1;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.34);
+    padding-inline: 20px;
+    width: 100%;
+}
+
+
+.deco1Timer {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.deco2Timer {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Gistesy';
+  src: url('./assets/fonts/Gistesy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0%;
+}
+
+#root {
+  background: linear-gradient(135deg, #5a1665 0%, #a31677 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  max-width: 600px;
+}

@@ -1,0 +1,214 @@
+.actionsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.titleActionsContainer {
+    font-size: 90px;
+    font-weight: 400;
+    margin: 0;
+
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Gistesy;    
+    width: 100%;
+    text-align: center;
+}
+
+.actionsContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-block: 35px;
+
+}
+
+.actionsContent .titleActions {
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+}
+
+.actionsContent .dateActions {
+    font-size: 14px;
+    font-weight: 400;
+    color: palevioletred;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+    padding-block: 0px 15px;
+}
+
+.actionsContent .agendaLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff32;
+    padding: 16px;
+    max-width: 250px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.actionsContent .agendaLink img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.actionsContent .iconTouch {
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    color: palevioletred;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Animación pulse para iconTouch */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* ----------MODAL---------- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .modal-content {
+    background: rgba(255, 255, 255, 0.171);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 90vw;
+    max-height: 90vh;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: #5a1665;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1001;
+  }
+  
+  .modal-close p {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .modal-close:hover {
+    background: #a31677;
+    transform: scale(1.1);
+  }
+  
+  .modal-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+  
+  /* Animaciones del modal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: scale(0.8) translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive para el modal */
+  @media (max-width: 768px) {
+    .modal-content {
+      margin: 20px;
+      padding: 15px;
+    }
+    
+    .modal-close {
+      top: -10px;
+      right: -10px;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+
+.deco4Actions {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
