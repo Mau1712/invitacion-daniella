@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import musicButtonPause from "../../assets/partyIcons/pause.png";
 import musicButtonPlay from "../../assets/partyIcons/play.png";
 import musicFile from "../../assets/audio/music.mp3";

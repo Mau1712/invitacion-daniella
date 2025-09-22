@@ -1,4 +1,3 @@
-import React from 'react'
 import { Autoplay, FreeMode, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -11,8 +10,8 @@ import './swiper.css'
 import deco3 from '../../assets/deco3.png'
 
 // 
-import dani2 from '../../assets/dani2.png'
-import dani3 from '../../assets/dani3.png'
+// import dani2 from '../../assets/dani2.png'
+// import dani3 from '../../assets/dani3.png'
 
 import d1 from '../../assets/swiper/d1.jpg'
 import d2 from '../../assets/swiper/d2.jpg'
@@ -50,7 +49,7 @@ export const SwiperContainer = () => {
   return (
     <div className='swiperContainer'>
 
-      <h2 className='titleSwiper'>Un recorrido de estas 15 primaveras</h2>
+      <h2 className='titleSwiper'>Un recorrido de mi vida</h2>
 
       <Swiper
         slidesPerView={1}
